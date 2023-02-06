@@ -11,7 +11,7 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = (array) => {
+const titleCased = () => {
   let results = []
   tutorials.map(sentence => {
     let words = sentence.split(" ")
@@ -21,7 +21,7 @@ const titleCased = (array) => {
     })
     results.push(capitalizedSentence.join(" "))
   })
-  console.log(results)
+  return results;
   // const titles =[];
   // for (let element1 of tutorials){
   //   let words = element1.split(" ");
